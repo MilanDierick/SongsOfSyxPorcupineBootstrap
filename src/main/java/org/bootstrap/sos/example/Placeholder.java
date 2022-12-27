@@ -1,6 +1,7 @@
 package org.bootstrap.sos.example;
 
 import org.porcupine.interfaces.IScriptEntity;
+import org.porcupine.utilities.Logger;
 
 public class Placeholder implements IScriptEntity {
 	@Override
@@ -15,11 +16,11 @@ public class Placeholder implements IScriptEntity {
 
 	@Override
 	public void onInitializeEarly() {
-		System.out.println("Placeholder initialized early.");
+		Logger.info("Placeholder initialized early.");
 	}
 
 	@Override
 	public void onInitializeLate() {
-		System.out.println("Placeholder initialized late.");
+		Logger.info("Placeholder initialized late.");
 	}
 }
