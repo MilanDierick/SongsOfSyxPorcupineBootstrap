@@ -22,7 +22,7 @@ public class FPSCounter implements IScriptEntity, ITickCapable, IRenderCapable {
 	}
 	
 	@Override
-	public void onTick(double v) {
+	public void onTick(double delta) {
 		if (tickTimes.size() >= maxSamples) {
 			tickTimes.removeFirst();
 		}
