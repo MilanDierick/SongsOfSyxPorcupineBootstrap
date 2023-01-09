@@ -21,11 +21,6 @@ public class FPSCounter implements IScriptEntity, ITickCapable, IRenderCapable {
 		return "FPS Counter";
 	}
 	
-	//	@Override
-	//	public void onRender(Renderer renderer, double v) {
-	//		//new Text(UI.FONT().S, "Tick FPS: " + tickFPS).render(renderer, 25, 125);
-	//	}
-	
 	@Override
 	public void onTick(double v) {
 		if (tickTimes.size() >= maxSamples) {
